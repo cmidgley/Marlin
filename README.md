@@ -10,6 +10,13 @@
 Additional documentation can be found at the [Marlin Home Page](http://marlinfw.org/).
 Please test this firmware and let us know if it misbehaves in any way. Volunteers are standing by!
 
+## Custom changes on this fork
+
+This fork, on branch bugfix-2.0.x, is customized for the MPCNC machine and includes the not-yet-merged laser
+fixes from [jediminer532](https://github.com/MarlinFirmware/Marlin/pull/15335), as well as a few bug fixes
+to that code base.  __This code has not been operated yet on a live running machine, and has only had bench
+testing using an oscilliscope!__
+
 ## Marlin 2.0 Bugfix Branch
 
 __Not for production use. Use with caution!__
