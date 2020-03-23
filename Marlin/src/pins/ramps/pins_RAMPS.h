@@ -142,18 +142,25 @@
   #define Z_CS_PIN                            40
 #endif
 
-#define E0_STEP_PIN                           26
-#define E0_DIR_PIN                            28
-#define E0_ENABLE_PIN                         24
+#define E0_STEP_PIN                           70
+#define E0_DIR_PIN                            70
+#define E0_ENABLE_PIN                         70
 #ifndef E0_CS_PIN
-  #define E0_CS_PIN                           42
+  #define E0_CS_PIN                           70
 #endif
 
-#define E1_STEP_PIN                           36
-#define E1_DIR_PIN                            34
-#define E1_ENABLE_PIN                         30
-#ifndef E1_CS_PIN
-  #define E1_CS_PIN                           44
+#define X2_STEP_PIN                           26
+#define X2_DIR_PIN                            28
+#define X2_ENABLE_PIN                         24
+#ifndef X2_CS_PIN
+  #define X2_CS_PIN                           42
+#endif
+
+#define Y2_STEP_PIN                           36
+#define Y2_DIR_PIN                            34
+#define Y2_ENABLE_PIN                         30
+#ifndef Y2_CS_PIN
+  #define Y2_CS_PIN                           44
 #endif
 
 //
@@ -615,7 +622,7 @@
         //#define LCD_SCREEN_ROT_270
 
         // not connected to a pin
-        #define LCD_BACKLIGHT_PIN             -1  // 65 (MKS mini12864 can't adjust backlight by software!)
+        #define LCD_BACKLIGHT_PIN             65  // 65 (MKS mini12864 can't adjust backlight by software!)
 
         #define BTN_EN1                       31
         #define BTN_EN2                       33

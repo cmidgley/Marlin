@@ -67,7 +67,7 @@ void SpindleLaser::init() {
   **/
   void SpindleLaser::set_ocr(const uint8_t ocr) {
     WRITE(SPINDLE_LASER_ENA_PIN, SPINDLE_LASER_ACTIVE_HIGH); // turn spindle on
-    analogWrite(pin_t(SPINDLE_LASER_PWM_PIN), ocr ^ SPINDLE_LASER_PWM_OFF);
+    set_pwm_duty(pin_t(SPINDLE_LASER_PWM_PIN), ocr ^ SPINDLE_LASER_PWM_OFF);  // CWM: Was analogWrite
   }
 
 #endif
@@ -76,9 +76,10 @@ void SpindleLaser::init() {
 // Set cutter ON state (and PWM) to the given cutter power value
 //
 void SpindleLaser::apply_power(const cutter_power_t inpow) {
-  static cutter_power_t last_power_applied = 0;
-  if (inpow == last_power_applied) return;
-  last_power_applied = inpow;
+  // CWM: Removed these three lines to fix cache issue (HACK ALERT!)
+  //static cutter_power_t last_power_applied = 0;
+  //if (inpow == last_power_applied) return;    
+  //last_power_applied = inpow;
   #if ENABLED(SPINDLE_LASER_PWM)
     if (enabled())
       set_ocr(translate_power(inpow));
