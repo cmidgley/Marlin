@@ -37,6 +37,7 @@
  *
  */
 #define CONFIGURATION_H_VERSION 020005
+#define SHORT_BUILD_VERSION "cmidgley/Marlin"     // cwm: Custom build version until this is merged into mainline
 
 //===========================================================================
 //============================= Getting Started =============================
@@ -1736,7 +1737,7 @@
 //
 // Add individual axis homing items (Home X, Home Y, and Home Z) to the LCD menu.
 //
-//#define INDIVIDUAL_AXIS_HOMING_MENU
+#define INDIVIDUAL_AXIS_HOMING_MENU
 
 //
 // SPEAKER/BUZZER
@@ -1744,7 +1745,7 @@
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
 //
-//#define SPEAKER
+#define SPEAKER
 
 //
 // The duration and frequency for the UI feedback sound.

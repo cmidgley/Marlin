@@ -12,13 +12,15 @@ Please test this firmware and let us know if it misbehaves in any way. Volunteer
 
 ## Custom changes on this fork
 
-This fork, on branch bugfix-2.0.x, is customized for the MPCNC machine and includes the not-yet-merged laser
+This fork, on branch bugfix-2.0.x, is customized for the MPCNC (RAMPS, dual-enstop, 32 steps) machine and includes the not-yet-merged laser
 fixes from [jediminer532](https://github.com/MarlinFirmware/Marlin/pull/15335), as well as a few bug fixes
-to that code base.  __This code has not been operated yet on a live running machine, and has only had bench
-testing using an oscilliscope!__
+to that code base.  
+
+__Status:__ This code has been bench tested for laser operations using an oscilliscope, and has been tested for basic
+stepper operation and endstop operation on X/Y/Z.  __No actual laser has been operated yet__, and this is operating from the bugfix_2.0.x branch, so there may be serious bugs.  __You have been warned!__
 
 ## Marlin 2.0 Bugfix Branch
-
+s
 __Not for production use. Use with caution!__
 
 Marlin 2.0 takes this popular RepRap firmware to the next level by adding support for much faster 32-bit and ARM-based boards while improving support for 8-bit AVR boards. Read about Marlin's decision to use a "Hardware Abstraction Layer" below.
