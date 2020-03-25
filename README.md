@@ -12,12 +12,14 @@ Please test this firmware and let us know if it misbehaves in any way. Volunteer
 
 ## Custom changes on this fork
 
-This fork, on branch bugfix-2.0.x, is customized for the MPCNC machine (RAMPS, dual-enstop, 32 steps, LCD) and includes the not-yet-merged laser fixes from [jediminer532](https://github.com/MarlinFirmware/Marlin/pull/15335), as well as a few bug fixes to that code base.  It also contains some customizations that I use, such as faster max feedrate, larger table size (500x500), and a few others as well.  Any place I have made a unique customization (beyond what Marlin, jediminer532 or Ryan/v1Engineering has made) I have marked with "// cwm: (description)" in the code.  
+This fork, on branch bugfix-2.0.x, is customized for the MPCNC machine (RAMPS, dual-enstop, 32 steps, LCD) and includes the not-yet-merged laser fixes from [jediminer532](https://github.com/MarlinFirmware/Marlin/pull/15335).  It also contains some customizations that I use, such as faster max feedrate, larger table size (500x500), and a few others as well.  Any place I have made a unique customization (beyond what Marlin, jediminer532 or Ryan/v1Engineering has made) I have marked with "// cwm: (description)" in the code.  
 
 __Status (March 23, 2020):__ This code has been bench tested for laser operations using an oscilliscope, and has been tested for basic stepper operation and endstop operation on an MPCNC.  __No actual laser has been operated yet__, and this is operating from the bugfix_2.0.x branch (meaning, it's a development branch), so there may be serious bugs.  __You have been warned!__
 
+__Status (March 26, 2020):__ Updated with latest Marlin and jediminer532 code, which now works without any custom fixes from me.  Also enabled AUTO_BED_LEVELING_BILINEAR to start playing around with mesh leveling for precision PCB milling.
+
 ## Marlin 2.0 Bugfix Branch
-s
+
 __Not for production use. Use with caution!__
 
 Marlin 2.0 takes this popular RepRap firmware to the next level by adding support for much faster 32-bit and ARM-based boards while improving support for 8-bit AVR boards. Read about Marlin's decision to use a "Hardware Abstraction Layer" below.
