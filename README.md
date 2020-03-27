@@ -18,6 +18,8 @@ __Status (March 23, 2020):__ This code has been bench tested for laser operation
 
 __Status (March 26, 2020):__ Updated with latest Marlin and jediminer532 code, which now works without any custom fixes from me.  Also enabled AUTO_BED_LEVELING_BILINEAR to start playing around with mesh leveling for precision PCB milling.
 
+__Status (March 26, 2020 #2):__ Ran it live on MPCNC for router cutting with SuperPID on D8/D9 (using fan/heated bed, not the new spindle feature).  Found a few issues with negative Z and homing.  Successfully did a few jobs  in 1/4 aluminum, so the firmware itself is looking good.  No laser testing yet (believe it or not, my soldering iron broke so now waiting on that...!) 
+
 ## Marlin 2.0 Bugfix Branch
 
 __Not for production use. Use with caution!__
